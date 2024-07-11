@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading's Profile - Carder</title>
+    <link href="../css/global.css" rel="stylesheet" type="text/css" />
+    <link href="../css/user.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div id="topbar" class="row"></div>
+    <div class="modal">
+        <div id="header" class="row">
+            <img id="icon" src="../img/default.png" width="192" height="192">
+            <div>
+                <h1 id="display-name" style="margin: 0; margin-bottom: 2.5px;">Loading</h1>
+                <h2 class="nomarginchildren nomargin" style="color: gray;">(@<span id="username">loading</span>)</h2>
+            </div>
+        </div>
+        
+        <hr>
+
+        <div class="row nomargin" id="filters">
+            <button data-page="collection">Collection</button>
+            <button data-page="favs">Favorites</button>
+            <button data-page="posts">Posts</button>
+        </div>
+        <div class="nomargin" id="pages">
+            <div id="collection" class="nomargin page activepage">
+                <!-- This is where card sets will go -->
+                
+            </div>
+            <div id="nullpage" class="page nomargin">
+                <h3>The page you are trying to reach cant be found</h3>
+            </div>
+        </div>
+    </div>
+    
+    <script src="../js/global.js" type="module"></script>
+    <script src="../js/firebase.js" type="module"></script>
+    <script src="../js/user.js" type="module"></script>
+    <script src="../js/gotologin.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+:root {
+    --dark1: #28282B;
+    --dark2: #343434;
+    --dark3: #2e2e2e;
+    --dark4: #1f1f1f;
+    --accent: #e84848;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    background-color: var(--dark1);
+    display: flex;
+    min-height: 100% !important;
+    flex-direction: column;
+    position: relative;
+    height: auto;
+}
+
+input,
+button {
+    font-size: 20px;
+    background-color: var(--dark2);
+    color: white;
+    border-radius: 15px;
+    padding: 7.5px;
+    border-color: transparent;
+    transition: background-color 0.25s ease-in-out;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+div * {
+    margin: 5px;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.stretch100w, .fill100w {
+    width: 100%;
+}
+
+.nomargin {
+    margin: 0;
+}
+
+.nomarginchildren * {
+    margin: 0px;
+}
+
+.modal {
+    margin: 25px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--dark4);
+    border-radius: 15px;
+}
+
+.modal h1 {
+    margin-bottom: 15px;
+}
+
+button:hover {
+    background-color: var(--dark3);
+}
+
+#topbar {
+    width: 100%;
+    background-color: var(--dark4);
+    border-bottom: 2px solid var(--accent);
+    position: sticky;
+    top: 0px;
+    z-index: 100000;
+}
+
+#topbar button {
+    background-color: var(--dark4);
+}
+
+#topbar button:hover {
+    background-color: var(--dark3);
+}
+
+hr {
+    border-color: var(--accent);
+    border-width: 1px;
+    border-radius: 15px;
+    border-style: solid;
+}
+
+.center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.card-set {
+    margin: 0;
+    margin-top: 10px;
+    background-color: var(--dark1);
+    border: 0px solid black;
+    padding: 5px;
+    width: calc(100% - 10px);
+    border-radius: 15px;
+    position: relative;
+}
+
+.card {
+    position: relative;
+    margin: 10px;
+}
+
+.card img {
+    width: 180px;
+    height: 252px;
+    border-radius: 15px;
+    margin: 0px;
+}
+
+.card .overlay {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    border: 0px solid black;
+    margin: 0;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: height 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.card:hover .overlay {
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
+    padding: 5px;
+}
+
+
+.card-set .roll {
+    overflow-x: scroll;
+}

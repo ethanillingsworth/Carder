@@ -1,0 +1,52 @@
+#icon {
+    border-color: var(--accent);
+    border-width: 4px;
+    border-radius: 15px;
+    border-style: solid;
+}
+
+#header {
+    flex-wrap: wrap;
+}
+@media ( max-width: 475px ) {
+    #header {
+        place-content: center;
+    }
+    #header div {
+        align-items: center;
+    }
+}
+
+
+
+#header h1, #header h2 {
+    width: fit-content;
+}
+
+#filters {
+    width: auto;
+    background-color: var(--dark1);
+    border-radius: 15px;
+    margin-top: 5px;
+    justify-content: center;
+}
+
+#filters button {
+    background-color: var(--dark1);
+}
+
+#filters button:hover {
+    background-color: var(--dark3);
+}
+
+#filters button.active {
+    background-color: var(--dark3);
+}
+
+.page {
+    display: none;
+}
+
+.activepage {
+    display: flex;
+}

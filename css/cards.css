@@ -1,0 +1,23 @@
+#searchbar {
+    position: sticky;
+    top: 54px;
+    z-index: 100000;
+    border: 2px solid var(--dark4);
+    border-radius: 15px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#searchbar #search {
+    border-radius: inherit;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#searchbar #button {
+    background-color: var(--dark3);
+    border-left: 2px solid var(--dark4);
+    border-radius: inherit;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
